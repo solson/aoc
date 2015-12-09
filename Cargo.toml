@@ -2,3 +2,6 @@
 name = "aoc"
 version = "0.1.0"
 authors = ["Scott Olson <scott@solson.me>"]
+
+[dependencies]
+md5 = "0.1.1"
