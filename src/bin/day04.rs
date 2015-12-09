@@ -1,6 +1,8 @@
 extern crate aoc;
 extern crate md5;
 
+use std::io::Write;
+
 fn main() {
     const KEY: &'static [u8] = b"bgvyzdsv";
 
@@ -11,8 +13,7 @@ fn main() {
     let mut six_zeroes = None;
 
     while five_zeroes.is_none() || six_zeroes.is_none() {
-        vec.extend(i.to_string().bytes());
-
+        write!(vec, "{}", i).unwrap();
         let digest = md5::compute(&vec);
 
         if five_zeroes.is_none() && digest[0..2] == [0; 2] && digest[2] <= 0x0F {
