@@ -5,3 +5,4 @@ authors = ["Scott Olson <scott@solson.me>"]
 
 [dependencies]
 md5 = "0.1.1"
+permutohedron = "0.1.7"

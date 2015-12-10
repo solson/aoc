@@ -3,10 +3,16 @@ name = "aoc"
 version = "0.1.0"
 dependencies = [
  "md5 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "permutohedron 0.1.7 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "md5"
 version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "permutohedron"
+version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
